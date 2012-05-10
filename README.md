@@ -6,7 +6,7 @@ This gems adds a method to ActionMailer which enables sending messages right to 
 Rails Setup
 -----------
 
-First add the gem to your `Gemfile` and run the +bundle+ command to install it.
+First add the gem to your `Gemfile` and run the `bundle` command to install it.
 
   `gem "jabber_delivery"`
 
