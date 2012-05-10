@@ -21,4 +21,4 @@ Most project's structure is *imported* from `letter_opener` gem and for now it's
 Development & Feedback
 ----------------------
 
-Special thanks to the [letter_opener](https://github.com/ryanb/letter_opener) gem for inspiring this project and for their mail template.
+Special thanks to the [letter_opener](https://github.com/ryanb/letter_opener) gem for inspiring this project and {mail_view}[https://github.com/37signals/mail_view/] gem for their mail template.
