@@ -1,7 +1,7 @@
 Jabber Delivery
 ---------------
 
-This gems adds a method to ActionMailer which enables sending messages right to jabber.
+This gem adds a method to ActionMailer which enables sending messages right to jabber.
 
 Rails Setup
 -----------
@@ -15,7 +15,7 @@ TODO: Think about switching delivery method right before activating action maile
 Project Status
 --------------
 
-Most project's structure is *imported* from `letter_opener` gem and for now it's not so serious.
+Most of project's structure is *imported* from `letter_opener` gem and for now it's not so serious.
 
 
 Development & Feedback
