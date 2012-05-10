@@ -1,19 +1,17 @@
-require 'pry'
+require 'jabber_delivery/jabber_client'
 
 #
 module JabberDelivery
   class DeliveryMethod
     def initialize(options = {})
       @options = options
-      binding.pry
 
       raise "UID should be specified for jabber delivery" unless uid
       raise "password should be specified for jabber delivery" unless password
     end
 
     def deliver!(mail)
-      binding.pry
-      jabber_client
+      jabber_client.deliver(mail.to.first, mail.body.to_s)
     end
 
   private
@@ -29,6 +27,7 @@ module JabberDelivery
 
     #
     def jabber_client
+      @jabber_client ||= JabberClient.new(uid, password)
     end
   end
 end
