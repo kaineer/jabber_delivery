@@ -31,9 +31,7 @@ describe JabberDelivery::DeliveryMethod do
 
     after(:each) do
       mail = Mail.deliver do
-        from    "Anything will do aaa@aaa.aa"
         to      TARGET_UID
-        subject "What subject?"
         body    MESSAGE
       end
     end
