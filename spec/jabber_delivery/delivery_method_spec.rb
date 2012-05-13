@@ -15,7 +15,7 @@ describe JabberDelivery::DeliveryMethod do
       method = nil
 
       Mail.defaults do
-        method = delivery_method JabberDelivery::DeliveryMethod, :uid => jabber_uid, :password => jabber_password
+        method = delivery_method JabberDelivery::DeliveryMethod, :jid => jabber_uid, :password => jabber_password
       end
 
       @method = method
