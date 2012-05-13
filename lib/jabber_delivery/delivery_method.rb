@@ -6,7 +6,7 @@ module JabberDelivery
     def initialize(options = {})
       @options = options
 
-      raise "UID should be specified for jabber delivery" unless uid
+      raise "JID should be specified for jabber delivery" unless jid
       raise "password should be specified for jabber delivery" unless password
     end
 
@@ -16,8 +16,8 @@ module JabberDelivery
 
   private
     #
-    def uid
-      @uid ||= (@options[:uid] || @options["uid"])
+    def jid
+      @jid ||= (@options[:jid] || @options["jid"])
     end
 
     #
@@ -27,7 +27,7 @@ module JabberDelivery
 
     #
     def jabber_client
-      @jabber_client ||= JabberClient.new(uid, password)
+      @jabber_client ||= JabberClient.new(jid, password)
     end
   end
 end

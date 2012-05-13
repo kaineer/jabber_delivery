@@ -4,7 +4,7 @@ require 'xmpp4r'
 module JabberDelivery
   class JabberClient
     def initialize(jid, password)
-      @uid, @password = uid, password
+      @jid, @password = jid, password
     end
 
     def deliver(target_jid, message)
