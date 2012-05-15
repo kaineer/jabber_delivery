@@ -18,6 +18,7 @@ password: here_goes_your_password
 ```
 
 TODO: Think about switching delivery method right before activating action mailer.
+
 Gem will be published right after I'll figure this out.
 
 Project Status
