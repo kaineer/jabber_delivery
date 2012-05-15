@@ -8,11 +8,13 @@ Rails Setup
 
 First add the gem to your `Gemfile` and run the `bundle` command to install it.
 
-  `gem "jabber_delivery"`
+```ruby
+gem "jabber_delivery"
+```
 
 Then, create file `config/jabber_delivery.yml` and put there jabber credentials you're going to use:
 
-```yml
+```yaml
 jid: foobar@somejabber.com
 password: here_goes_your_password
 ```
