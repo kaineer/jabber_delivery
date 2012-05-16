@@ -19,9 +19,17 @@ jid: foobar@somejabber.com
 password: here_goes_your_password
 ```
 
-TODO: Think about switching delivery method right before activating action mailer.
+Now I can do in [devise](https://github.com/plataformatec/devise) resource:
 
-Gem will be published right after I'll figure this out.
+```ruby
+  def headers_for(action)
+    { :to => address,                       # Got address from email field with format {email|jabber}:(address here)
+      :delivery_method => delivery_method   # Depending on prefix, use :smtp or :jabber_delivery (just for example)
+    }
+  end
+```
+
+Hope it will help.
 
 Project Status
 --------------
